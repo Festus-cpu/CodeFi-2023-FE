@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action.page.php">
+        <label for = "fname">Enter Your Username:</label><br>
+        <input type="text id="fname" name="fname" placeholder="Username">
+        <br>
+        <br>
+        <input type="radio" id="gender" name="selectGender" value="male">
+            <label for="gender">Male</label>
+            <br>
+        <input type="radio" id="gender" name="selectGender" value="female">
+            <label for="female">Female</label>
+            <br>
+        <input type="radio" id="gender" name="selectGender" value="other">
+            <label for="other">Other</label>
+        <br>
+        <br>
+        <input type="checkbox" id="policy" name="terms" value="agree">
+            <label for="agree">I agree to terms and conditions.</label>
+        <br>
+        <br>
+        <label for="countryName">Select a country:</label>
+            <select country="countryName" id="countryName">
+                <option value="unitedstates">United States</option>
+                <option value="Germany">Germany</option>
+                <option value="mexico">Mexico</option>
+                <option value="China">China</option>
+            </select>
+        <br>
+        <br>
+        <input type="button" value="Submit" onclick="msg()">
+    </form>
+    <script>
+        function msg() {
+            alert("Thank you!");
+        }
+    </script>
+</body>
+</html>
